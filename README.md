@@ -43,7 +43,7 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-![Logon events for user-mu84-we271](images/figure-1.png)
+![Device logon events query results](images/device-logon-events-query.png)
 
 ## Impact
 
@@ -58,7 +58,7 @@ DeviceLogonEvents
 |---|---|---|---|
 | **Bitcoin** | `bc1qt6kstjjdatqnxd3ksdcfv0jnhdjzndcnkx8zla` | INSERT, 28 Sep 14:51 | Payment |
 | **Email** | `ak+2lusq@onionmail.org` | Same insert | Contact |
-| **URL** | `hxxps://cuq[.]in/844` | Same insert | Actor page |
+| **URL** | https://cuq.in/844 | Same insert | Actor page |
 | **DATAID** | 2LUSQ | Same insert | Victim tag |
 | **Demand** | 0.0101 BTC, 48-hour leak threat | Same insert | Extortion |
 | **Schema** | RECOVER_YOUR_DATA / text; earlier `*.RECOVER_YOUR_DATA_info` | Query log | Ransom store |
@@ -87,11 +87,11 @@ MySQLAudit_CL
     by IpAddress, Username, ActionType
 ```
 
-![MySQL auth attempts by IP](images/figure-2.png)
+![MySQL auth attempts by IP](images/mysql-auth-attempts-by-ip.png)
 
-![Query results](images/figure-3.png)
+![Ransom note in the recover_your_data table (MySQL Workbench)](images/ransom-note-mysql-workbench.png)
 
-![Query results](images/figure-4.png)
+![CREATE DATABASE RECOVER_YOUR_DATA event](images/create-recover-your-data-event.png)
 
 ## Timeline
 
@@ -135,7 +135,7 @@ union
 | order by TimeGenerated desc
 ```
 
-![Combined logon and MySQL query timeline](images/figure-5.png)
+![Attack timeline query results](images/attack-timeline-query.png)
 
 ## Attack vector
 
