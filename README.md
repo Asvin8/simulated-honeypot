@@ -1,4 +1,4 @@
-# simulated-honeypot
+# Simulated honeypot
 
 This is a simulated honeypot. Below is the full incident response report for the MySQL data theft and extortion attack it captured. The original document is also in this repo as [Incident Response Report MySQL Ransom.pdf](Incident%20Response%20Report%20MySQL%20Ransom.pdf).
 
